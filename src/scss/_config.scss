@@ -1,0 +1,9 @@
+// https://sass-lang.com/documentation/modules/map
+
+$breakpoints: (
+  'x-small': 576px,
+  'small': 767px,
+  'medium': 768px,
+  'large': 992px,
+  'x-large': 1200px,
+) !default;

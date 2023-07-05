@@ -1,0 +1,16 @@
+$margin-top: 24px;
+
+main {
+  width: 80%;
+  height: calc(100vh - #{$height-header});
+  margin: 0 auto;
+  margin-top: $height-header;
+  display: flex;
+
+  .col-container {
+    margin-top: $margin-top;
+    background-color: $secondary-color;
+    height: calc(100% - #{$height-footer} - #{$margin-top} - 16px);
+    width: 100%;
+  }
+}

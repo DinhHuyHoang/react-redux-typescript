@@ -1,0 +1,9 @@
+{
+  "configurations": [{
+    "type": "pwa-node",
+    "runtimeVersion": "14.10.1",
+    "request": "launch",
+    "name": "Next: Node",
+    "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
+  }]
+}

@@ -1,0 +1,21 @@
+// https://www.sitepoint.com/breakpoints-tweakpoints-sass/
+
+@mixin respond-to($point) {
+  @if map-has-key($tweakpoints, $point) {
+    @media only screen and (min-width: map-get($tweakpoints, $point)) {
+      @content;
+    }
+  } @else if map-has-key($breakpoints, $point) {
+    @media only screen and (min-width: map-get($breakpoints, $point)) {
+      @content;
+    }
+  } @else {
+    @warn "Could not find `#{$breakpoint}` in both local ($tweakpoints) and global ($breakpoints) contexts. Media block omitted.";
+  }
+}
+
+@mixin respond-to-max-h-w($height, $width) {
+  @media (max-height: $height) and (max-width: $width) {
+    @content;
+  }
+}

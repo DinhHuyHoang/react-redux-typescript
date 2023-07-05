@@ -1,0 +1,13 @@
+$tweakpoints: (
+  'inline': 650px,
+  'block': 980px,
+  'small-test': 767px,
+);
+
+// .app {
+//   background-color: red;
+
+//   @include respond-to('small-test') {
+//     color: blue;
+//   }
+// }

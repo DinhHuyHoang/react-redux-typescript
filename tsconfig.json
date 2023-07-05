@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": ["./src/typings"],
+    "paths": {
+      "@root/*": ["./src/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@scss/*": ["./src/assets/scss/*"],
+      "@components/*": ["./src/components/*"],
+      "@containers/*": ["./src/containers/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "./public", "webpack.*.js"]
+}

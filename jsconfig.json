@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@root": ["src"],
+      "@root/*": ["src/*"],
+      "@redux": ["src/redux"],
+      "@redux/*": ["src/redux/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@containers": ["src/containers"],
+      "@containers/*": ["src/containers/*"],
+      "@assets": ["src/assets"],
+      "@assets/*": ["src/assets/*"],
+      "@scss": ["src/assets/scss"],
+      "@scss/*": ["src/assets/scss/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,65 @@
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .chatbox-header {
+    display: flex;
+    justify-content: space-between;
+
+    .channel-name {
+      padding-left: 16px;
+    }
+
+    .channel-member {
+      display: flex;
+
+      .item {
+        background-color: #1f1f1f;
+        border-radius: 50%;
+        height: 16px;
+        width: 16px;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -4px;
+        border: 1px solid;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .chatbox-messages {
+    flex: 1;
+  }
+
+  .chatbox-input {
+    height: 56px;
+    border: 1px solid gray;
+    position: relative;
+
+    textarea {
+      background: transparent;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      outline: none;
+      // border: 1px solid gray;
+    }
+
+    .chatbox-tools {
+      position: absolute;
+      top: 30%;
+      right: 30px;
+
+      .icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+}

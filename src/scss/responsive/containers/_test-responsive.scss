@@ -1,0 +1,16 @@
+@import '../../breakpoint';
+
+$tweakpoints: (
+  'ipad-pro': 1000px,
+);
+
+.test-container {
+  @include respond-to('x-small') {
+    flex-direction: row;
+    background-color: pink;
+  }
+
+  @include respond-to-max-h-w(500px, 500px) {
+    background-color: orange;
+  }
+}

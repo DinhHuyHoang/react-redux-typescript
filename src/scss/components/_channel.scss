@@ -1,0 +1,15 @@
+.channel-container {
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid;
+
+  .channel-item {
+    padding: 4px 0;
+    padding-left: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
